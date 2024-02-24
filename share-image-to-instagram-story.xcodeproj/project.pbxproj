@@ -13,6 +13,9 @@
 		686118C22B8A97DE00B1FD42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 686118C12B8A97DE00B1FD42 /* Preview Assets.xcassets */; };
 		686118C42B8A97DE00B1FD42 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686118C32B8A97DE00B1FD42 /* Persistence.swift */; };
 		686118C72B8A97DE00B1FD42 /* share_image_to_instagram_story.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 686118C52B8A97DE00B1FD42 /* share_image_to_instagram_story.xcdatamodeld */; };
+		686118D22B8A98B900B1FD42 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686118D12B8A98B900B1FD42 /* ViewModel.swift */; };
+		686118D42B8A994A00B1FD42 /* ImageCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686118D32B8A994A00B1FD42 /* ImageCoverView.swift */; };
+		686118D62B8A99F700B1FD42 /* InstagramSharingUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686118D52B8A99F700B1FD42 /* InstagramSharingUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,10 @@
 		686118C12B8A97DE00B1FD42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		686118C32B8A97DE00B1FD42 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		686118C62B8A97DE00B1FD42 /* share_image_to_instagram_story.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = share_image_to_instagram_story.xcdatamodel; sourceTree = "<group>"; };
+		686118D12B8A98B900B1FD42 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		686118D32B8A994A00B1FD42 /* ImageCoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCoverView.swift; sourceTree = "<group>"; };
+		686118D52B8A99F700B1FD42 /* InstagramSharingUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSharingUtils.swift; sourceTree = "<group>"; };
+		686118D72B8A9CB300B1FD42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +62,12 @@
 		686118B92B8A97DC00B1FD42 /* share-image-to-instagram-story */ = {
 			isa = PBXGroup;
 			children = (
-				686118BA2B8A97DC00B1FD42 /* share_image_to_instagram_storyApp.swift */,
-				686118BC2B8A97DC00B1FD42 /* ContentView.swift */,
+				686118D72B8A9CB300B1FD42 /* Info.plist */,
+				686118D02B8A98A000B1FD42 /* Model */,
+				686118CF2B8A989700B1FD42 /* ViewModel */,
+				686118CE2B8A989000B1FD42 /* App */,
+				686118CD2B8A986F00B1FD42 /* View */,
 				686118BE2B8A97DE00B1FD42 /* Assets.xcassets */,
-				686118C32B8A97DE00B1FD42 /* Persistence.swift */,
-				686118C52B8A97DE00B1FD42 /* share_image_to_instagram_story.xcdatamodeld */,
 				686118C02B8A97DE00B1FD42 /* Preview Content */,
 			);
 			path = "share-image-to-instagram-story";
@@ -71,6 +79,41 @@
 				686118C12B8A97DE00B1FD42 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		686118CD2B8A986F00B1FD42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				686118D32B8A994A00B1FD42 /* ImageCoverView.swift */,
+				686118BC2B8A97DC00B1FD42 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		686118CE2B8A989000B1FD42 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				686118BA2B8A97DC00B1FD42 /* share_image_to_instagram_storyApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		686118CF2B8A989700B1FD42 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				686118D12B8A98B900B1FD42 /* ViewModel.swift */,
+				686118D52B8A99F700B1FD42 /* InstagramSharingUtils.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		686118D02B8A98A000B1FD42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				686118C32B8A97DE00B1FD42 /* Persistence.swift */,
+				686118C52B8A97DE00B1FD42 /* share_image_to_instagram_story.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +186,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				686118D62B8A99F700B1FD42 /* InstagramSharingUtils.swift in Sources */,
+				686118D22B8A98B900B1FD42 /* ViewModel.swift in Sources */,
 				686118C42B8A97DE00B1FD42 /* Persistence.swift in Sources */,
+				686118D42B8A994A00B1FD42 /* ImageCoverView.swift in Sources */,
 				686118BD2B8A97DC00B1FD42 /* ContentView.swift in Sources */,
 				686118BB2B8A97DC00B1FD42 /* share_image_to_instagram_storyApp.swift in Sources */,
 				686118C72B8A97DE00B1FD42 /* share_image_to_instagram_story.xcdatamodeld in Sources */,
@@ -283,11 +329,13 @@
 				DEVELOPMENT_TEAM = BD28H7LZTR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "share-image-to-instagram-story/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,11 +360,13 @@
 				DEVELOPMENT_TEAM = BD28H7LZTR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "share-image-to-instagram-story/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
